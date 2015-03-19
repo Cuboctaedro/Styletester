@@ -1,12 +1,12 @@
 <section class="st-wrapper" id="<?php echo $page->parent()->uid() ?>">
 
-    <?php if(kirby()->request()->params()->headers() == 'show' || !kirby()->request()->params()->headers()): ?>
+    <?php if(param('headers') == 'show'): ?>
         <header class="st-header">
             <h<?php echo $page->parent()->depth() ?>><?php echo $page->parent()->title()->html() ?></h<?php echo $page->parent()->depth() ?>>
         </header>
     <?php endif; ?>
 
-    <?php if(kirby()->request()->params()->notes() == 'show'): ?>
+    <?php if(param('notes') == 'show'): ?>
         <div class="st-notes">
             <?php echo $page->parent()->text()->kirbytext() ?>
         </div>
@@ -14,21 +14,21 @@
 
     <?php if($page->parent()->hasSections()): ?>
         <?php foreach($page->parent()->sections() as $section): ?>
-            <?php snippet('view_loop', array('page' => $section->view())); ?>
+            <?php snippet('view_loop', array('page' => $section)) ?>
         <?php endforeach; ?>
 
     <?php elseif($page->parent()->hasHtmlcode()): ?>
         <div class="st-view">
-            <?php echo $page->parent()->htmlcode()->html() ?>
+            <?php foreach($page->parent()->htmlcode() as $htmlfile): ?>
+                <?php echo $htmlfile->read() ?>
+            <?php endforeach; ?>
         </div>
 
-        <?php if(kirby()->request()->params()->code() == 'show'): ?>
+        <?php if(param('code') == 'show'): ?>
             <div class="st-code">
-                <pre>
-                    <code>
-                        <?php echo html($page->parent()->htmlcode(), $keepTags = false) ?>
-                    </code>
-                </pre>
+                <?php foreach($page->parent()->htmlcode() as $htmlfile): ?>
+                    <?php echo kirbytag(array('code'  => $htmlfile->url(), 'lang'  => 'markup' )); ?>
+                <?php endforeach; ?>
             </div>
         <?php endif; ?>
 

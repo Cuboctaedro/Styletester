@@ -1,5 +1,5 @@
 <?php
-class StyletesterPage extends Page {
+class SectionPage extends Page {
     public function hasCsscode() {
         return $this->files()->filterBy('extension','==', 'css')->count();
     }
@@ -13,10 +13,7 @@ class StyletesterPage extends Page {
         return $this->files()->filterBy('extension','==', 'js');
     }
     public function hasHtmlcode() {
-        return $this->files()->filterBy('extension','==', 'html')->count();
-    }
-    public function htmlcode() {
-        return $this->files()->filterBy('extension','==', 'html');
+        return $this->htmlcode()->length();
     }
     public function hasText() {
         return $this->text()->length();
@@ -25,9 +22,9 @@ class StyletesterPage extends Page {
         return $this->children()->filterBy('intendedTemplate','==', 'view')->first();
     }
     public function sections() {
-        return $this->index()->filterBy('intendedTemplate','==', 'section');
+        return $this->children()->filterBy('intendedTemplate','==', 'section');
     }
     public function hasSections() {
-        return $this->index()->filterBy('intendedTemplate','==', 'section')->count();
+        return $this->children()->filterBy('intendedTemplate','==', 'section')->count();
     }
 }

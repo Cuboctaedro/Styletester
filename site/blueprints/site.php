@@ -4,7 +4,7 @@ title: Site
 pages:
   template:
     default
-    tester
+    section
 fields:
   title:
     label: Title

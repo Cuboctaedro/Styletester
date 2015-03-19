@@ -11,6 +11,7 @@
     iframe
         display: block
         width: 100%
+        min-height: 300px
         margin: 0
         padding: 0
         border: 0
@@ -18,76 +19,4 @@
 
 #st-footer
     display: none
-
-#st-site-header
-    position: fixed !important
-    top: 0
-    left: 0
-    right: 0
-    height: 40px
-    height: 2.5rem
-    background-color: #333333
-    color: #ffffff
-    z-index: 100000000
-    font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif
-    font-size: 12px
-    font-size: 0.75rem
-    line-height: 3.3333333
-    text-transform: uppercase
-    letter-spacing: 1px
-    .st-open-tester
-        font-size: 16px
-        font-size: 1rem
-        line-height: 2.5
-    ul, li
-        list-style: none
-        padding: 0
-        margin: 0
-    a
-        color: #ffffff
-        text-decoration: none
-        line-height: 2.5
-        padding: 0 16px
-        padding: 0 1rem
-        display: block
-
-
-#st-main-menu
-    #st-show-menu
-        display: none
-    .st-group-menu, .st-open-tester
-        display: inline-block
-        position: relative
-    .st-second-menu
-        max-height: 0
-        overflow: hidden
-        width: 200px
-        width: 12.5rem
-        position: absolute
-        top: 40px
-        left: 0
-        background-color: #333333
-        color: #ffffff
-        z-index: 100000000
-        -webkit-transition: 300ms ease
-        -moz-transition: 300ms ease
-        -o-transition: 300ms ease
-        transition: 300ms ease
-        &.st-visible
-            max-height: 1200px
-            overflow: visible
-        a
-            border-bottom: 1px solid
-    .st-third-menu
-        max-height: 0
-        overflow: hidden
-        -webkit-transition: 300ms ease
-        -moz-transition: 300ms ease
-        -o-transition: 300ms ease
-        transition: 300ms ease
-        text-transform: lowercase
-        background-color: #222222
-        &.st-visible
-            max-height: 1200px
-            overflow: visible
 

@@ -9,10 +9,7 @@
   <meta name="description" content="<?php echo $site->description()->html() ?>">
   <meta name="keywords" content="<?php echo $site->keywords()->html() ?>">
 
-  <?php echo js('assets/js/prism.js') ?>
-  <?php echo js('assets/js/jquery-1.11.2.min.js') ?>
-
-  <?php echo css('assets/css/prism.css') ?>
+  <?php echo js('assets/js/uilang.js') ?>
   <?php echo css('assets/css/ststyles.css') ?>
 
 </head>

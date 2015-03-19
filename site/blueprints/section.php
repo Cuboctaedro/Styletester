@@ -6,7 +6,7 @@ pages:
   build:
     - title: View
       uid: view
-      template: section_view
+      template: view
       num: 1
 files: true
 fields:
@@ -15,4 +15,7 @@ fields:
     type:  text
   text:
     label: Text
+    type:  textarea
+  htmlcode:
+    label: HTML
     type:  textarea
