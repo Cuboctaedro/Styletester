@@ -1,22 +1,503 @@
-#st-body
+@import "helpers.styl"
+@import "color.styl"
+@import "shadow.styl"
+@import "grid.styl"
+@import "typography.styl"
+
+/* //////////////////////////////////////////
+*                 COLORS
+*////////////////////////////////////////////
+
+
+#styletester-site-header
+    background-color:$md-blue-grey
+    color: $md-white
+#styletester-site-header nav ul
+    background-color: $md-blue-grey
+#styletester-site-header a
+    color: $md-white
+#styletester-link-home
+    border-right: 1px solid $md-white
+#styletester-body
+    background-color: $md-white
+
+#styletester-menu-wrapper a
+    text-color()
+    border-bottom: 1px solid $md-grey-300
+    background-color: $md-white
+    &:hover
+        background-color: $md-grey-200
+
+.styletester-info h1
+    border-top: 1px solid $md-grey-300
+    color:$md-blue-grey
+.styletester-info h2
+    border-top: 1px solid $md-grey-300
+    color:$md-blue-grey
+.styletester-info h3
+    border-top: 1px solid $md-grey-300
+    color:$md-blue-grey
+.styletester-info h4
+    border-top: 1px solid $md-grey-300
+    color:$md-blue-grey
+.styletester-notes
+    text-color()
+    a
+        color: $md-blue-grey
+        text-decoration: none
+.styletester-code
+    background-color: $md-grey-300
+.styletester-view
+    border-top: 1px solid $md-brown-100
+    border-bottom: 1px solid $md-brown-100
+    background-color: $md-white
+.styletester-code-button, .styletester-button
+    background-color: $md-brown-50
+    color: $md-grey-800
+#styletester-content-wrapper > section
+    elevation-1()
+    background-color: $md-brown-50
+#styletester-to-top
+    color: $md-blue-grey
+
+/* //////////////////////////////////////////
+*                 TYPOGRAPHY
+*////////////////////////////////////////////
+#styletester-site-header
+    fontsize(14,40)
+    caps()
+    normal()
+    sans()
+    a
+        text-decoration: none
+    #styletester-link-tester
+        weight(800)
+        fontsize(14,40)
+    #styletester-controls-wrapper h4, #styletester-link-login a
+        weight(400)
+        fontsize(14,40)
+
+#styletester-menu-wrapper a
+    sans()
+    fontsize(14,36)
+    text-decoration: none
+    caps()
+#styletester-menu-wrapper li li li a
+    text-transform: none
+    letter-spacing: 0
+
+.styletester-notes
+    sans()
+    fontsize(14,20)
+.styletester-notes p
+    margin: 12px 0 0 0
+    margin: pxtorem(12) 0 0 0
+    max-width:480px
+    max-width: pxtorem(480)
+.styletester-info h1
+    weight(400)
+    fontsize(34,40)
+    sans()
+    margin: 0
+    padding: 4px 0 0 0
+.styletester-info h2
+    weight(800)
+    fontsize(24,32)
+    sans()
+    margin: 0
+    padding: 4px 0 0 0
+.styletester-info h3
+    weight(800)
+    fontsize(20,24)
+    sans()
+    margin: 0
+    padding: 4px 0 0 0
+.styletester-info h4
+    weight(800)
+    fontsize(16,24)
+    sans()
+    margin: 0
+    padding: 4px 0 0 0
+.styletester-code pre code
+    fontsize(14,24)
+    mono()
+
+.styletester-code-button, .styletester-button
+    padding: 0 24px
+    padding: 0 pxtorem(24)
+    caps()
+    fontsize(14,30)
+    sans()
+    text-decoration: none
+    border: 0
+    radius(0,0,0,0)
+    elevation-1()
+    outline: none
+
+
+#styletester-to-top
+    fontsize(14,24)
+    sans()
+    text-decoration: none
+
+
+/* //////////////////////////////////////////
+*                 LAYOUT
+*////////////////////////////////////////////
+
+#styletester-body
     margin: 0
     padding: 0
-    height: 100%
 
-#st-iframe-wrapper
-    width: 100%
-    height: 100%
-    padding: 40px 0 0 0
-    padding: 2.5rem 0 0 0
-    iframe
+#styletester-content-wrapper
+    position: absolute
+    top: 0
+    left: 200px
+    left: pxtorem(200)
+    right: 0
+    bottom: 0
+    z-index: -100
+    margin-top: 40px
+    margin-top: pxtorem(40)
+
+#styletester-menu-wrapper
+    position: absolute
+    top: 40px
+    top: pxtorem(40)
+    left: 0
+    width: 200px
+    width: pxtorem(200)
+    z-index: -100
+
+#styletester-site-header
+    margin: 0
+    padding: 0
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+    height: 40px
+    height: pxtorem(40)
+    elevation-2()
+
+#styletester-content-wrapper
+    &.styletester-xs > section
+        width: 320px
+        width: pxtorem(320)
+        margin: 0 auto
+    &.styletester-s > section
+        width: 480px
+        width: pxtorem(480)
+        margin: 0 auto
+    &.styletester-m > section
+        width: 600px
+        width: pxtorem(600)
+        margin: 0 auto
+    &.styletester-l > section
+        width: 900px
+        width: pxtorem(900)
+        margin: 0 auto
+    &.styletester-xl > section
+        width: 1200px
+        width: pxtorem(1200)
+        margin: 0 auto
+    &.styletester-f > section
+        width: auto
+#styletester-to-top
+    position: fixed
+    bottom: 24px
+    bottom: pxtorem(24)
+    right: 24px
+    right: pxtorem(24)
+
+/* //////////////////////////////////////////
+*                 MENU
+*////////////////////////////////////////////
+
+#styletester-menu-wrapper
+    ul, li
+        list-style: none
+        padding: 0
+        margin: 0
+    a
         display: block
-        width: 100%
-        min-height: 300px
+        padding-left: 12px
+        padding-left: pxtorem(12)
+    li li a
+        padding-left: 24px
+        padding-left: pxtorem(24)
+    li li li a
+        padding-left: 36px
+        padding-left: pxtorem(36)
+
+/* //////////////////////////////////////////
+*                 HEADER
+*////////////////////////////////////////////
+
+#styletester-site-header
+    ul, li
+        list-style: none
+        border: 0
         margin: 0
         padding: 0
-        border: 0
-        outline: 0
+    #styletester-link-home
+        f-left()
+        display:inline-block
+        width: 40px
+        width: pxtorem(40)
+        height: 40px
+        height: pxtorem(40)
+        text-align: center
+    #styletester-link-tester
+        f-left()
+        margin: 0
+        display:inline-block
+        height: 40px
+        height: pxtorem(40)
+        padding:0 0 0 12px
+        padding:0 0 0 pxtorem(12)
+    #styletester-link-menu
+        f-left()
+        height: 40px
+        height: pxtorem(40)
+        display: none
+    #styletester-controls-wrapper, #styletester-link-login
+        f-right()
+        height: 40px
+        height: pxtorem(40)
+    #styletester-controls-wrapper h4, #styletester-link-login a
+        f-right()
+        height: 40px
+        height: pxtorem(40)
+        margin: 0
+        text-align: right
+        padding-right: 24px
+        padding-right: pxtorem(24)
+    #styletester-menu-sizes, #styletester-menu-docs
+        text-align: left
+        height: 0
+        opacity: 0
+        overflow:hidden
+        position: absolute
+        transition($property = opacity)
+        text-transform: none
+        letter-spacing: 0
+        &.visible
+            height: auto
+            overflow: visible
+            opacity: 1
+            elevation-2()
+        li a
+            display: block
+            padding:0 24px
+            padding: 0 pxtorem(24)
+            fontsize(14,32)
 
-#st-footer
-    display: none
+/* //////////////////////////////////////////
+*                 CONTENT
+*////////////////////////////////////////////
 
+.styletester-header
+    margin: 0 48px
+    margin: 0 pxtorem(48)
+    padding: 0
+.styletester-notes
+    margin:0 48px 24px 48px
+    margin:0 pxtorem(48) pxtorem(24) pxtorem(48)
+.styletester-info
+    padding-top: 24px
+    padding-top: pxtorem(24)
+
+.styletester-code
+    overflow: hidden
+    height: 0
+    opacity: 0
+    margin: 0 48px
+    margin: 0 pxtorem(48)
+    padding: 0
+    transition($property = opacity)
+    .visible + &
+        overflow-y: visible
+        overflow-x: hidden
+        height: auto
+        opacity: 1
+
+.styletester-code pre
+    overflow-x: scroll
+    padding: 24px
+    padding: pxtorem(24)
+    margin: 0
+
+.styletester-view
+    margin: 24px 0
+    margin: pxtorem(24) 0
+    padding: 24px
+    padding: pxtorem(24)
+
+.styletester-code-button, .styletester-button
+    display: inline-block
+    margin: 0 0 24px 48px
+    margin: 0 0 pxtorem(24) pxtorem(48)
+
+/* //////////////////////////////////////////
+*                HOME PAGE
+*////////////////////////////////////////////
+
+#styletester-body.styletester-home
+    color: $md-white
+    background-color: $md-blue-grey
+
+#styletester-site-navigation a
+    background-color: $md-blue-grey-700
+    color: $md-white
+    &:hover
+        background-color: $md-blue-grey-600
+#styletester-home-wrapper
+    width: 500px
+    width: pxtorem(500)
+    margin: 100px auto 0 auto
+    margin: pxtorem(100) auto 0 auto
+    text-align: center
+    #styletester-site-title h1
+        sans()
+        weight(800)
+        fontsize(36,48)
+        margin: 0 0 24px 0
+        margin: 0 0 pxtorem(24) 0
+    #styletester-site-description
+        sans()
+        weight(400)
+        fontsize(24,36)
+        margin-bottom: 480px
+        margin-bottom: pxtorem(48)
+    #styletester-site-navigation
+        ul, li
+            list-style: none
+            margin: 0
+            padding: 0
+        a
+            display: block
+            width: 300px
+            width: pxtorem(300)
+            sans()
+            caps()
+            fontsize(18,44)
+            weight(400)
+            text-decoration: none
+            elevation-1()
+            margin: 24px auto 0 auto
+            margin: pxtorem(24) auto 0 auto
+
+/* //////////////////////////////////////////
+*                  DOCS
+*////////////////////////////////////////////
+
+#styletester-doc-main
+    background-color: $md-brown-50
+    text-color()
+    sans()
+    padding: 36px 48px
+    padding: pxtorem(36) pxtorem(48)
+    min-height: 100%
+#styletester-doc-main h1
+    border-top: 1px solid $md-grey-300
+    weight(400)
+    fontsize(34,40)
+    margin: 0
+    padding: 0
+#styletester-doc-main h2
+    border-top: 1px solid $md-grey-300
+    weight(400)
+    fontsize(24,32)
+    margin: 0
+    padding: 0
+#styletester-doc-main h3
+    border-top: 1px solid $md-grey-300
+    weight(800)
+    fontsize(20,24)
+    margin: 0
+    padding: 0
+#styletester-doc-main h4
+    border-top: 1px solid $md-grey-300
+    weight(400)
+    fontsize(16,24)
+    margin: 0
+    padding: 0
+#styletester-doc-main p
+    text-color()
+    margin: 12px 0 0 0
+    margin: pxtorem(12) 0 0 0
+    max-width:480px
+    max-width: pxtorem(480)
+
+/* //////////////////////////////////////////
+*               MEDIA QUERIES
+*////////////////////////////////////////////
+
+@media screen and (max-width: 38em)
+
+    #styletester-content-wrapper
+        left: 0
+        margin-top: 64px
+        margin-top: pxtorem(64)
+        .showmenu &
+            left: 200px
+
+    #styletester-menu-wrapper
+        left: -200px
+        top: 64px
+        top: pxtorem(64)
+        .showmenu &
+            left: 0
+
+    #styletester-site-header
+        height: 64px
+        height: pxtorem(64)
+        #styletester-link-home
+            position: absolute
+            top:0
+            left:0
+            float:none
+            width: 64px
+            width: pxtorem(64)
+            height: 64px
+            height: pxtorem(64)
+            line-height: 64px
+            line-height: pxtorem(64)
+        #styletester-link-tester
+            height: 32px
+            height: pxtorem(32)
+            clear: right
+            margin-left: 64px
+            margin-left: pxtorem(64)
+            padding-left: 24px
+            padding-left: pxtorem(24)
+        #styletester-link-menu
+            f-left()
+            display: inline-block
+            height: 32px
+            height: pxtorem(32)
+            clear: left
+            margin-left: 64px
+            margin-left: pxtorem(64)
+            padding-left: 24px
+            padding-left: pxtorem(24)
+        #styletester-controls-wrapper, #styletester-link-login
+            f-left()
+            height: 32px
+            height: pxtorem(32)
+        #styletester-controls-wrapper h4, #styletester-link-login a
+            text-align: left
+            padding-right: 0
+            padding-right: 0
+            padding-left: 24px
+            padding-left: pxtorem(24)
+        span
+            display: none
+        #styletester-menu-sizes.visible, #styletester-menu-docs.visible
+            top: 64px
+            top: pxtorem(64)
+    #styletester-home-wrapper
+        width: 100%
+        margin: 64px 0 0 0
+        margin: pxtorem(64) 0 0 0

@@ -1,14 +1,11 @@
-  <nav role="navigation" id="st-menu-docs"  aria-labelledby="st-docs-desc">
-    <h2>
-      <a id="st-show-docs" href="#">
-        <span id="st-docs-desc">About</span>
-      </a>
-    </h2>
-    <ul>
-      <?php foreach($site->index()->filterBy('template', 'default') as $p): ?>
+<?php $docsbase = $pages->findOpen()->children()->filterBy('intendedTemplate','==', 'docs')->first() ?>
+    <h4>
+      <a id="styletester-show-docs" href="#"><i class="fa fa-file-text"></i> <span><?php echo $docsbase->title()->html() ?></span></a>
+    </h4>
+    <ul id="styletester-menu-docs">
+      <?php foreach($docsbase->children() as $doc): ?>
         <li>
-          <a href="<?php echo $p->url() ?>"><?php echo $p->title()->html() ?></a>
+          <a href="<?php echo $doc->url() ?>"><?php echo $doc->title()->html() ?></a>
         </li>
       <?php endforeach; ?>
     </ul>
-  </nav>

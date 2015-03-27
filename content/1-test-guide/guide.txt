@@ -1,0 +1,25 @@
+Title: Test Guide
+
+----
+
+Text: 
+
+----
+
+Doctype: 
+
+----
+
+Sectionfiles: 
+
+----
+
+Stylefiles: 
+
+----
+
+Headerjs: 
+
+----
+
+Footerjs: 

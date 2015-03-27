@@ -1,0 +1,221 @@
+@import "color.styl"
+@import "typography.styl"
+@import "helpers.styl"
+
+$leading = 24
+$grey = $md-grey-600
+$lightgrey = $md-grey-500
+
+*
+    -moz-box-sizing: border-box
+    -webkit-box-sizing: border-box
+    box-sizing: border-box
+
+html
+    sans()
+    -ms-text-size-adjust: 100%
+    -webkit-text-size-adjust: 100%
+
+body
+    margin: 0
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary
+    display: block
+
+hr
+    -moz-box-sizing: content-box
+    box-sizing: content-box
+    height: 1px
+    border: 0
+    color: $grey
+    background-color: $grey
+
+p
+    margin-bottom: $leading * 1px
+    margin-bottom: pxtorem($leading)
+
+a
+    color: $grey
+    no-line()
+    background-color: transparent
+    outline: 0
+
+a:hover, a:focus
+    color: $grey
+    outline: 0;
+    underline()
+
+abbr, acronym
+    underline(dotted)
+    cursor: help
+
+b, strong
+    font-weight: 600
+
+big
+    font-size: 120%
+    vertical-align: baseline
+    line-height: 0
+
+cite
+    italic()
+
+code, kbd, pre, samp
+    mono()
+
+del, s
+    deleted()
+
+dfn
+    italic()
+
+i, em
+    italic()
+
+ins
+    underline()
+
+mark
+    background-color: $md-yellow
+    color:inherit
+
+q
+    quotes: "\201C""\201D""\2018""\2019"
+    &:before
+        content: open-quote
+    &:after
+        content: close-quote
+
+small
+    font-size: 80%
+    vertical-align: baseline
+    line-height: 0
+
+sub, sup
+    font-size: 75%
+    line-height: 0
+    position: relative
+    vertical-align: baseline
+
+sup
+    top: -0.5em
+
+sub
+    bottom: -0.25em
+
+u
+    underline()
+
+var
+    italic()
+
+blockquote
+    italic()
+    color: $grey
+    padding: 0 ($leading * 1px)
+    padding: 0 pxtorem($leading)
+    margin: 0 0 ($leading * 1px) 0
+    margin: 0 0 pxtorem($leading) 0
+
+ol, ul
+    margin: 0 0 ($leading * 1px) 0
+    margin: 0 0 pxtorem($leading) 0
+    padding: 0 0 0 1em
+    padding: 0 0 0 1em
+
+ul ul, ul ul ul, ul ul ul ul, ol ol, ol ol ol, ol ol ol ol
+    margin: 0 0 0 ($leading * 1px)
+    margin: 0 0 0 pxtorem($leading)
+    padding: 0
+
+ul, ul ul, ul ul ul, ul ul ul ul
+    list-style-type: disc
+
+nav ul, nav ul ul, nav ul ul ul, nav ul ul ul ul
+    margin: 0
+    padding: 0
+    list-style: none
+
+
+li, dd
+    margin: 0
+    padding: 0
+
+dl
+    margin: 0
+    padding: 0
+
+dt
+    bold()
+
+pre
+    overflow: auto
+
+
+img, video, object
+    max-width: 100%
+    height: auto
+
+img
+    border: 0
+
+audio, canvas, progress, video
+    display: inline-block
+    vertical-align: baseline
+
+iframe
+    margin-bottom: $leading * 1px
+    margin-bottom: pxtorem($leading)
+
+figure
+    margin-bottom: 0 0 ($leading * 1px) 0
+    margin-bottom: 0 0 pxtorem($leading) 0
+
+figcaption
+    normal()
+
+button, input, optgroup, select, textarea
+    color: inherit
+    font: inherit
+    margin: 0
+    text-transform: none
+    line-height: normal
+
+button
+    overflow: visible;
+
+button, input[type="button"], input[type="reset"], input[type="submit"]
+    -webkit-appearance: button
+    cursor: pointer
+
+button[disabled], input[disabled]
+    cursor: default
+
+button::-moz-focus-inner, input::-moz-focus-inner
+    border: 0
+    padding: 0
+
+input[type="checkbox"], input[type="radio"]
+    box-sizing: border-box
+    padding: 0
+
+input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button
+    height: auto;
+
+input[type="search"]
+    -moz-box-sizing: content-box
+    -webkit-box-sizing: content-box
+    box-sizing: content-box
+
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration
+    -webkit-appearance: none
+
+input[type=text], input[type=search], input[type=url], input[type=number], textarea
+    -webkit-appearance: none
+
+fieldset
+    border: 0
+    margin: 0
+    padding: 0
+
+

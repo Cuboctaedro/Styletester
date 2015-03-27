@@ -1,0 +1,29 @@
+
+shadow($horizontal, $vertical, $blur, $spread)
+    -webkit-box-shadow: ($horizontal * 1px) ($vertical * 1px) ($blur * 1px) ($spread * 1px) $shadowcolor;
+    -moz-box-shadow: ($horizontal * 1px) ($vertical * 1px) ($blur * 1px) ($spread * 1px) $shadowcolor;
+    box-shadow: ($horizontal * 1px) ($vertical * 1px) ($blur * 1px) ($spread * 1px) $shadowcolor;
+
+
+pxtorem(px)
+    (px / 16) * 1rem
+
+radius($topleft, $topright, $bottomright, $bottomleft)
+    border-top-left-radius: $topleft
+    border-top-right-radius: $topright
+    border-bottom-right-radius: $bottomright
+    border-bottom-left-radius: $bottomleft
+    -webkit-border-top-left-radius: $topleft
+    -webkit-border-top-right-radius: $topright
+    -webkit-border-bottom-right-radius: $bottomright
+    -webkit-border-bottom-left-radius: $bottomlef
+    -moz-border-top-left-radius: $topleft
+    -moz-border-top-right-radius: $topright
+    -moz-border-bottom-right-radius: $bottomright
+    -moz-border-bottom-left-radius: $bottomlef
+
+transition($property = all, $time = 500ms, $effect = ease, $delay = 0)
+    -webkit-transition: $property $time $effect $delay
+    -moz-transition: $property $time $effect $delay
+    -o-transition: $property $time $effect $delay
+    transition: $property $time $effect $delay

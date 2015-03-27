@@ -2,9 +2,7 @@
 
 title: Site
 pages:
-  template:
-    default
-    section
+  template: guide
 fields:
   title:
     label: Title

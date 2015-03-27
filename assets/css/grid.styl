@@ -1,0 +1,72 @@
+$gutter-v = 24
+$gutter-h = 24
+
+f-left()
+  float:left
+  display: inline-block
+
+f-right()
+  float:right
+  display: inline-block
+
+centered()
+  margin-left: auto
+  margin-right: auto
+
+module(some, all)
+  width: (some / all) * 100%
+
+push(some, all)
+  margin-left: (some / all) * 100%
+
+pull(some, all)
+  margin-right: (some / all) * 100%
+
+move(some, all)
+  position: relative
+  left: (some / all) * 100%
+
+place(top = auto, right = auto, bottom = auto, left = auto)
+  position: absolute
+  top: top
+  right: right
+  bottom: bottom
+  left: left
+
+unmove()
+  left: auto
+
+unposition()
+  position: static
+
+size(width, height)
+  width: width * 1px
+  width: (width / 16) * 1rem
+  height: height * 1px
+  height: (height / 16) * 1rem
+
+md-size(width, height)
+  width: width * 4px
+  width: (width / 4) * 1rem
+  height: height * 4px
+  height: (height / 4) * 1rem
+
+md-margin(m-top = 0, m-right = 0, m-bottom = 0, m-left = 0)
+  margin-top: m-top * 4px
+  margin-top: (m-top / 4) * 1rem
+  margin-right: m-right * 4px
+  margin-right: (m-right / 4) * 1rem
+  margin-bottom: m-bottom * 4px
+  margin-bottom: (m-bottom / 4) * 1rem
+  margin-left: m-left * 4px
+  margin-left: (m-left / 4) * 1rem
+
+gutter(top = 0, right = 1, bottom = 0, left = 1)
+  padding: unit((top * $gutter-v * 0.5), px) unit((right * $gutter-h * 0.5), px) unit((bottom * $gutter-v * 0.5), px) unit((left * $gutter-h * 0.5), px)
+  padding: unit((top * ($gutter-v /16) * 0.5), rem) unit((right * ($gutter-h /16) * 0.5), rem) unit((bottom * ($gutter-v /16) * 0.5), rem) unit((left * ($gutter-h /16) * 0.5), rem)
+
+hide()
+  display:none
+
+show()
+  display: block

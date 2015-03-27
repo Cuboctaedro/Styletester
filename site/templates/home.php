@@ -8,22 +8,28 @@
   <title><?php echo $site->title()->html() ?> | <?php echo $page->title()->html() ?></title>
   <meta name="description" content="<?php echo $site->description()->html() ?>">
   <meta name="keywords" content="<?php echo $site->keywords()->html() ?>">
+  <link href='http://fonts.googleapis.com/css?family=Fira+Sans:400,700' rel='stylesheet' type='text/css'>
 
-  <?php echo js('assets/js/uilang.js') ?>
   <?php echo css('assets/css/ststyles.css') ?>
 
 </head>
-<body id="st-body">
-    <div id="st-home-wrapper">
-        <nav>
-            <ul>
-                <?php foreach($pages->filterBy('intendedTemplate','==', 'section') as $section): ?>
-                    <li>
-                        <a href="<?php echo $section->url() ?>"><?php echo $section->title()->html() ?></a>
-                    </li>
-                <?php endforeach; ?>
-            </ul>
-        </nav>
+<body id="styletester-body" class="styletester-home">
+    <div id="styletester-home-wrapper">
+      <div id="styletester-site-title">
+        <h1><?php echo $site->title()->html() ?></h1>
+      </div>
+      <div id="styletester-site-description">
+        <?php echo $site->description()->html() ?>
+      </div>
+      <nav id="styletester-site-navigation">
+        <ul>
+          <?php foreach($pages->filterBy('intendedTemplate','==', 'guide') as $guide): ?>
+            <li>
+              <a href="<?php echo $guide->url() ?>"><?php echo $guide->title()->html() ?></a>
+            </li>
+          <?php endforeach; ?>
+        </ul>
+      </nav>
     </div>
 </body>
 </html>

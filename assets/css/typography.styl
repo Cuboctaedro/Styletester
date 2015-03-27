@@ -1,0 +1,66 @@
+
+serif()
+    font-family: 'Noto Serif', Georgia, Times, 'Times New Roman', serif
+
+sans()
+    font-family: 'Fira Sans', sans-serif;
+
+grotesque()
+    font-family: 'Roboto', Arial, 'Helvetica Neue', Helvetica, sans-serif
+
+condensed()
+   font-family: 'Roboto Condensed', Impact, Haettenschweiler, sans-serif
+
+slab()
+    font-family: 'Roboto Slab', Rockwell, serif
+
+mono()
+    font-family: 'Fira Mono', monospace
+
+italic()
+    font-style: italic
+
+weight($weight)
+    font-weight: $weight
+
+normal()
+    font-style: normal
+
+bold()
+    font-weight:600
+
+caps()
+    text-transform: uppercase
+    letter-spacing: 1px
+
+smallcaps()
+    -moz-font-feature-settings: "smcp"
+    -ms-font-feature-settings: "smcp"
+    -webkit-font-feature-settings: "smcp"
+    font-feature-settings: "smcp"
+
+justified()
+    -webkit-hyphens: auto
+    -moz-hyphens: auto
+    -ms-hyphens: auto
+    hyphens: auto
+    text-align: justify
+
+fontsize($fontsize, $leading)
+    font-size: $fontsize * 1px
+    font-size: ($fontsize / 16) * 1rem
+    line-height: ($leading / $fontsize)
+
+changesize($amount)
+    font-size: ($fontsize + $amount) * 1px
+    font-size: (($fontsize + $amount) / 16) * 1rem
+
+deleted()
+    text-decoration: line-through
+
+no-line()
+    text-decoration: none
+
+underline($style = solid)
+    text-decoration: none
+    border-bottom: 1px $style

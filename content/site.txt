@@ -1,0 +1,17 @@
+Title: Styletester
+
+----
+
+Author: Dimitris Kottas - Cuboctaedro
+
+----
+
+Description: Templates for testing CSS libraries, frameworks and styleguides.
+
+----
+
+Keywords: CSS,HTML template
+
+----
+
+Copyright: © 2015-(date: Year) (link: http://cuboctaedro.eu text: Dimitris Kottas)

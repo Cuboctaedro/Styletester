@@ -1,27 +1,23 @@
-  <nav role="navigation" id="st-menu-sizes"  aria-labelledby="st-sizes-desc">
-    <h2>
-      <a id="st-show-sizesoprtions" href="#">
-        <span id="st-sizes-desc">Sizes</span>
-      </a>
-    </h2>
-    <ul>
+    <h4>
+      <a id="styletester-show-sizesoprtions" href="#"><i class="fa fa-arrows-h"></i> <span>Sizes</span></a>
+    </h4>
+    <ul id="styletester-menu-sizes">
       <li>
-        <a id="st-sizes-xs" href="#">Extra Small</a>
+        <a id="styletester-sizes-xs" href="#">Extra Small</a>
       </li>
       <li>
-        <a id="st-sizes-s" href="#">Small</a>
+        <a id="styletester-sizes-s" href="#">Small</a>
       </li>
       <li>
-        <a id="st-sizes-m" href="#">Medium</a>
+        <a id="styletester-sizes-m" href="#">Medium</a>
       </li>
       <li>
-        <a id="st-sizes-l" href="#">Large</a>
+        <a id="styletester-sizes-l" href="#">Large</a>
       </li>
       <li>
-        <a id="st-sizes-xl" href="#">Extra Large</a>
+        <a id="styletester-sizes-xl" href="#">Extra Large</a>
       </li>
        <li>
-        <a id="st-sizes-f" href="#">Full</a>
+        <a id="styletester-sizes-f" href="#">Full</a>
       </li>
     </ul>
-  </nav>
