@@ -23,7 +23,7 @@
       </div>
       <nav id="styletester-site-navigation">
         <ul>
-          <?php foreach($pages->filterBy('intendedTemplate','==', 'guide') as $guide): ?>
+          <?php foreach($pages->visible()->filterBy('intendedTemplate','==', 'guide') as $guide): ?>
             <li>
               <a href="<?php echo $guide->url() ?>"><?php echo $guide->title()->html() ?></a>
             </li>

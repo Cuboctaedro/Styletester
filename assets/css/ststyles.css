@@ -362,6 +362,8 @@
   opacity: 0;
   overflow: hidden;
   position: absolute;
+  top: 40px;
+  top: 2.5rem;
   -webkit-transition: opacity 500ms ease 0;
   -moz-transition: opacity 500ms ease 0;
   -o-transition: opacity 500ms ease 0;
@@ -520,17 +522,19 @@
   font-size: 34px;
   font-size: 2.125rem;
   line-height: 1.176470588235294;
+  font-family: 'Fira Sans', sans-serif;
   margin: 0;
-  padding: 0;
+  padding: 4px 0 0 0;
 }
 #styletester-doc-main h2 {
   border-top: 1px solid #e0e0e0;
-  font-weight: 400;
+  font-weight: 800;
   font-size: 24px;
   font-size: 1.5rem;
   line-height: 1.333333333333333;
+  font-family: 'Fira Sans', sans-serif;
   margin: 0;
-  padding: 0;
+  padding: 4px 0 0 0;
 }
 #styletester-doc-main h3 {
   border-top: 1px solid #e0e0e0;
@@ -538,17 +542,19 @@
   font-size: 20px;
   font-size: 1.25rem;
   line-height: 1.2;
+  font-family: 'Fira Sans', sans-serif;
   margin: 0;
-  padding: 0;
+  padding: 4px 0 0 0;
 }
 #styletester-doc-main h4 {
   border-top: 1px solid #e0e0e0;
-  font-weight: 400;
+  font-weight: 800;
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5;
+  font-family: 'Fira Sans', sans-serif;
   margin: 0;
-  padding: 0;
+  padding: 4px 0 0 0;
 }
 #styletester-doc-main p {
   color: #212121;

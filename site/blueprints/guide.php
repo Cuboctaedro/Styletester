@@ -48,3 +48,14 @@ fields:
         label: file
         type: text
         placeholder: Please enter path/to/file.js
+  look:
+    label: Appearance
+    type: headline
+  guidestyle:
+    label: CSS files for StyleTester
+    type: structure
+    fields:
+      path:
+        label: file
+        type: text
+        placeholder: Please enter path/to/file.css

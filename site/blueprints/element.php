@@ -19,11 +19,3 @@ fields:
   htmlcode:
     label: HTML
     type:  textarea
-  related:
-    label: Related Elements
-    type: structure
-    fields:
-      path:
-        label: Element url
-        type: text
-        placeholder: Please enter element/url (autocomplete)
