@@ -7,8 +7,8 @@ password: >
 language: en
 role: admin
 history:
-  - test-guide/test-doc/second-test-doc
-  - test-guide/test-doc/first-test-doc
-  - test-guide/test-doc
-  - test-guide/atoms/lists/ordered-list
-  - test-guide/atoms/lists/unordered-list
+  - pattern-lab
+  - >
+    pattern-lab/about-styletester/dependences
+  - home
+token: a89c1252e8dbb04730037bcb714d70f13997e32f

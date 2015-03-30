@@ -4,12 +4,16 @@
 		"selected_items":
 		[
 			[
-				"paddi",
-				"padding-left"
-			],
-			[
 				"pa",
 				"padding-top"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"paddi",
+				"padding-left"
 			],
 			[
 				"te",
@@ -30,10 +34,6 @@
 			[
 				"md-grey",
 				"md-grey-800"
-			],
-			[
-				"mar",
-				"margin-top"
 			],
 			[
 				"ele",
@@ -325,31 +325,47 @@
 	},
 	"file_history":
 	[
-		"/E/Websites/styletester/site/snippets/header.php",
-		"/E/Websites/styletester/site/models/element.php",
-		"/E/Websites/styletester/site/snippets/footer.php",
-		"/E/Websites/styletester/site/models/guide.php",
-		"/E/Websites/styletester/site/blueprints/guide.php",
-		"/E/Websites/styletester/site/models/category.php",
-		"/E/Websites/styletester/site/blueprints/element.php",
+		"/E/Websites/styletester/site/templates/docs.php",
 		"/E/Websites/styletester/site/snippets/menu_sections.php",
+		"/E/Websites/styletester/site/snippets/menu_sizes.php",
+		"/E/Websites/styletester/site/snippets/footer.php",
+		"/E/Websites/styletester/site/models/element.php",
+		"/E/Websites/styletester/site/snippets/loop_element.php",
+		"/E/Websites/styletester/site/blueprints/element.php",
+		"/G/Websites/0_framework/00-Framework/elements.html",
+		"/E/Websites/styletester/site/models/guide.php",
+		"/E/Websites/styletester/site/templates/guide.php",
+		"/E/Websites/styletester/site/snippets/menu_docs.php",
+		"/E/Websites/styletester/site/snippets/header.php",
+		"/E/Websites/styletester/site/snippets/menu_docs_loop.php",
+		"/E/Websites/styletester/site/templates/element.php",
+		"/E/Websites/styletester/site/blueprints/docs.php",
+		"/E/Websites/styletester/site/blueprints/guide.php",
+		"/E/Websites/styletester/panel/app/lib/fieldoptions.php",
+		"/E/Websites/styletester/panel/app/fields/checkboxes/checkboxes.php",
+		"/E/Websites/styletester/panel/app/fields/radio/radio.php",
+		"/E/Websites/styletester/site/fields/category/category.php",
+		"/E/Websites/styletester/site/templates/taxonomies.php",
+		"/E/Websites/styletester/site/blueprints/default.php",
+		"/E/Websites/styletester/site/blueprints/taxonomy.php",
+		"/E/Websites/styletester/panel/app/fields/inputlist/inputlist.php",
+		"/E/Websites/styletester/panel/index.php",
+		"/E/Websites/styletester/panel/app/fields/base/base.php",
+		"/E/Websites/styletester/panel/app/fields/input/input.php",
+		"/E/Websites/styletester/site/models/category.php",
 		"/E/Websites/styletester/site/models/view.php",
 		"/E/Websites/styletester/site/models/subcategory.php",
 		"/E/Websites/styletester/site/models/styletester.php",
-		"/E/Websites/styletester/site/snippets/menu_docs.php",
 		"/E/Websites/styletester/site/accounts/styletester.php",
-		"/E/Websites/styletester/site/templates/guide.php",
 		"/E/Websites/styletester/assets/css/ststyles.css",
 		"/E/Websites/styletester/site/snippets/loop_subcategory.php",
 		"/E/Websites/styletester/site/snippets/loop_category.php",
-		"/E/Websites/styletester/site/snippets/loop_element.php",
 		"/E/Websites/styletester/site/snippets/view_footer.php",
 		"/E/Websites/styletester/site/snippets/view_header.php",
 		"/E/Websites/styletester/site/blueprints/category.php",
 		"/E/Websites/styletester/assets/css/ststyles.styl",
 		"/C/Users/user/Downloads/AnimatedWebBanners/index.html",
 		"/E/Websites/styletester/assets/js/scripts.js",
-		"/E/Websites/styletester/site/snippets/menu_sizes.php",
 		"/E/Websites/styletester/site/templates/view.php",
 		"/E/Websites/styletester/site/snippets/iframeheader.php",
 		"/E/Websites/styletester/00_backup/site/snippets/menu_docs.php",
@@ -360,7 +376,6 @@
 		"/E/Websites/styletester/00_backup/site/snippets/iframeheader.php",
 		"/E/Websites/styletester/site/snippets/iframefooter.php",
 		"/E/Websites/styletester/site/snippets/iframeloader.php",
-		"/E/Websites/styletester/site/templates/element.php",
 		"/E/Websites/styletester/site/snippets/view_element.php",
 		"/E/Websites/styletester/site/snippets/view_category.php",
 		"/E/Websites/styletester/site/templates/subcategory.php",
@@ -371,7 +386,6 @@
 		"/E/Websites/styletester/00_backup/site/models/view.php",
 		"/E/Websites/styletester/site/snippets/view_loop_guide.php",
 		"/E/Websites/styletester/site/snippets/view_loop_element.php",
-		"/E/Websites/styletester/site/blueprints/docs.php",
 		"/E/Websites/styletester/assets/css/color.styl",
 		"/E/Websites/styletester/assets/css/elements.styl",
 		"/E/Websites/styletester/assets/css/helpers.styl",
@@ -438,21 +452,7 @@
 		"/E/Websites/styletester/site/blueprints/element_view.php",
 		"/E/Websites/styletester/site/blueprints/group_view.php",
 		"/E/Websites/styletester/site/blueprints/section_view.php",
-		"/E/Websites/KirbyShop/kirby/core/page.php",
-		"/G/Websites/0_framework/00-Framework/styl/animation.styl",
-		"/E/Websites/styletester/site/tags/code.php",
-		"/E/Websites/styletester/element.txt",
-		"/G/Websites/0_framework/00-Framework/elements.html",
-		"/E/Websites/styletester/elements/headers.html",
-		"/G/Websites/0_framework/00-Framework/styl/helpers.styl",
-		"/G/Websites/0_framework/patternlab-php-master/patternlab-php-master/core/source/css/style.css",
-		"/G/Websites/0_framework/kube402/index.html",
-		"/G/Websites/0_framework/00-Framework/styl/framework.styl",
-		"/G/Websites/Eccentric/00-kirby-3/assets/css/framework.styl",
-		"/G/Websites/Eccentric/00-kirby-3/assets/css/styles.styl",
-		"/G/Websites/0_framework/00-Framework/styl/test.styl",
-		"/G/Websites/0_framework/00-Framework/test.css",
-		"/G/Websites/0_framework/normalize.css"
+		"/E/Websites/KirbyShop/kirby/core/page.php"
 	],
 	"find":
 	{

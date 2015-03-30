@@ -1,0 +1,24 @@
+Title: Pattern Lab
+
+----
+
+Text: This is a test styleguide based on Brad Frost's (link: http://patternlab.io/ text: Pattern Lab). To learn more about StyleTester read the (link: /pattern-lab/about-styletester text: documentation).
+
+----
+
+Stylefiles: 
+
+- 
+  path: assets/css/normalize.css
+
+----
+
+Headerjs: 
+
+----
+
+Footerjs: 
+
+----
+
+Guidestyle: 

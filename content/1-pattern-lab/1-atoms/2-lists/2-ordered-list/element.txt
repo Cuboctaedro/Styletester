@@ -1,0 +1,28 @@
+Title: Ordered list
+
+----
+
+Text: Nested ordered lists.
+
+----
+
+Htmlcode: 
+
+<ol>
+	<li>An ordered list. List item 01</li>
+	<li>List item 02</li>
+	<li>List item 03 with sublist
+		<ol>
+			<li>List item level 2</li>
+			<li>List item level 2 with subsublist
+				<ol>
+					<li>List item level 3</li>
+					<li>List item level 3</li>
+				</ol>
+			</li>
+                        <li>List item level 2</li>
+		</ol>
+	</li>
+	<li>A long list item. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
+	<li>List item</li>
+</ol>

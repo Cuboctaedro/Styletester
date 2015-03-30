@@ -1,4 +1,4 @@
-Title: Styletester
+Title: StyleTester
 
 ----
 
@@ -6,11 +6,11 @@ Author: Dimitris Kottas - Cuboctaedro
 
 ----
 
-Description: Templates for testing CSS libraries, frameworks and styleguides.
+Description: A Kirby theme for Style Guides and CSS frameworks.
 
 ----
 
-Keywords: CSS,HTML template
+Keywords: CSS,HTML template,Style Guide
 
 ----
 

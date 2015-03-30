@@ -1,0 +1,19 @@
+Title: Blockquote
+
+----
+
+Text: A blockquote with a cite tag for attribution.
+
+----
+
+Htmlcode: 
+
+<blockquote>
+            <p>This is a very important bloquote among normal paragraphs. The text is placed inside a p tag. Check the margins.</p>
+            <p>And this is the second paragraph of the famous quotation.</p>
+</blockquote>
+<p><cite><a href="/">And this is the cite.</a></cite> (in a p tag)</p>
+
+----
+
+Related: 

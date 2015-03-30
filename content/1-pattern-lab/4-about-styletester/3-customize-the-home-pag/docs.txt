@@ -1,0 +1,9 @@
+Title: Customize the look of StyleTester
+
+----
+
+Text: 
+
+StyleTester uses only one CSS file to render the header, menus and comments. If you want to change the look of your guide you can make a copy of this file (assets/css/ststyles.css), edit it, upload in your folder of choice and configure the guide to use it from the guide's edit page. Colors and typography are on the top of the stylesheet and they will be easy to change. Be more carefull with changing the layout. 
+
+In the CSS file there is a separate section for the Home page, you can change it too. By default the Home page includes your site's title and description and a series of links to your visible Guides. If you wish to create a custom Home page (adding your logo or whatever) edit the home.php file in the templates folder. It does not depend on any other PHP snippet files and you can link it with your own stylesheets and js if you wish.

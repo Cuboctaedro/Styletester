@@ -21,5 +21,4 @@
         <?php endif; ?>
 
     </section>
-    <a id="styletester-to-top" href="#styletester-content-wrapper">Top <i class="fa fa-arrow-up"></i></a>
 <?php snippet('footer') ?>

@@ -40,7 +40,7 @@
 .styletester-info h4
     border-top: 1px solid $md-grey-300
     color:$md-blue-grey
-.styletester-notes
+.styletester-notes, .styletester-related
     text-color()
     a
         color: $md-blue-grey
@@ -73,22 +73,35 @@
     #styletester-link-tester
         weight(800)
         fontsize(14,40)
-    #styletester-controls-wrapper h4, #styletester-link-login a
+    h4, #styletester-link-login a
         weight(400)
         fontsize(14,40)
 
 #styletester-menu-wrapper a
     sans()
-    fontsize(14,36)
+    fontsize(14,20)
+    padding-top: 8px
+    padding-top: pxtorem(8)
+    padding-bottom: 8px
+    padding-bottom: pxtorem(8)
     text-decoration: none
     caps()
 #styletester-menu-wrapper li li li a
     text-transform: none
     letter-spacing: 0
-
-.styletester-notes
+#styletester-menu-wrapper #styletester-menu-docs a
+    text-transform: none
+    letter-spacing: 0
+.styletester-notes, .styletester-related
     sans()
     fontsize(14,20)
+.styletester-related
+    span
+        weight(800)
+    ul, li
+        list-style:none
+        margin: 0
+        padding: 0
 .styletester-notes p
     margin: 12px 0 0 0
     margin: pxtorem(12) 0 0 0
@@ -159,6 +172,8 @@
     z-index: -100
     margin-top: 40px
     margin-top: pxtorem(40)
+    & > section
+        min-height: 100%
 
 #styletester-menu-wrapper
     position: absolute
@@ -261,26 +276,22 @@
         height: 40px
         height: pxtorem(40)
         display: none
-    #styletester-controls-wrapper, #styletester-link-login
+    #styletester-docs-link, #styletester-link-login, #styletester-sizes-link
         f-right()
         height: 40px
         height: pxtorem(40)
-    #styletester-controls-wrapper h4, #styletester-link-login a
-        f-right()
+    #styletester-docs-link h4, #styletester-sizes-link h4, #styletester-link-login a
         height: 40px
         height: pxtorem(40)
         margin: 0
         text-align: right
         padding-right: 24px
         padding-right: pxtorem(24)
-    #styletester-menu-sizes, #styletester-menu-docs
+    #styletester-menu-sizes
         text-align: left
         height: 0
         opacity: 0
         overflow:hidden
-        position: absolute
-        top: 40px
-        top: pxtorem(40)
         transition($property = opacity)
         text-transform: none
         letter-spacing: 0
@@ -291,9 +302,9 @@
             elevation-2()
         li a
             display: block
-            padding:0 24px
-            padding: 0 pxtorem(24)
-            fontsize(14,32)
+            padding:8px 24px
+            padding: pxtorem(8) pxtorem(24)
+            fontsize(14,20)
 
 /* //////////////////////////////////////////
 *                 CONTENT
@@ -303,13 +314,12 @@
     margin: 0 48px
     margin: 0 pxtorem(48)
     padding: 0
-.styletester-notes
+.styletester-notes, .styletester-related
     margin:0 48px 24px 48px
     margin:0 pxtorem(48) pxtorem(24) pxtorem(48)
 .styletester-info
-    padding-top: 24px
-    padding-top: pxtorem(24)
-
+    padding-top: 36px
+    padding-top: pxtorem(36)
 .styletester-code
     overflow: hidden
     height: 0
@@ -391,54 +401,6 @@
             margin: pxtorem(24) auto 0 auto
 
 /* //////////////////////////////////////////
-*                  DOCS
-*////////////////////////////////////////////
-
-#styletester-doc-main
-    background-color: $md-brown-50
-    text-color()
-    sans()
-    padding: 36px 48px
-    padding: pxtorem(36) pxtorem(48)
-    min-height: 100%
-#styletester-doc-main h1
-    border-top: 1px solid $md-grey-300
-    weight(400)
-    fontsize(34,40)
-    sans()
-    margin: 0
-    padding: 4px 0 0 0
-#styletester-doc-main h2
-    border-top: 1px solid $md-grey-300
-    weight(800)
-    fontsize(24,32)
-    sans()
-    margin: 0
-    padding: 4px 0 0 0
-#styletester-doc-main h3
-    border-top: 1px solid $md-grey-300
-    weight(800)
-    fontsize(20,24)
-    sans()
-    margin: 0
-    padding: 4px 0 0 0
-
-#styletester-doc-main h4
-    border-top: 1px solid $md-grey-300
-    weight(800)
-    fontsize(16,24)
-    sans()
-    margin: 0
-    padding: 4px 0 0 0
-
-#styletester-doc-main p
-    text-color()
-    margin: 12px 0 0 0
-    margin: pxtorem(12) 0 0 0
-    max-width:480px
-    max-width: pxtorem(480)
-
-/* //////////////////////////////////////////
 *               MEDIA QUERIES
 *////////////////////////////////////////////
 
@@ -490,21 +452,12 @@
             margin-left: pxtorem(64)
             padding-left: 24px
             padding-left: pxtorem(24)
-        #styletester-controls-wrapper, #styletester-link-login
-            f-left()
+        #styletester-docs-link, #styletester-link-login, #styletester-sizes-link
             height: 32px
             height: pxtorem(32)
-        #styletester-controls-wrapper h4, #styletester-link-login a
-            text-align: left
-            padding-right: 0
-            padding-right: 0
-            padding-left: 24px
-            padding-left: pxtorem(24)
         span
             display: none
-        #styletester-menu-sizes.visible, #styletester-menu-docs.visible
-            top: 64px
-            top: pxtorem(64)
+
     #styletester-home-wrapper
         width: 100%
         margin: 64px 0 0 0

@@ -1,0 +1,5 @@
+Title: Default Content
+
+----
+
+Text: StyleTester comes loaded with some default content for demonstration purposes. This content is based on Brad Frost's (link: http://patternlab.io/ text: Pattern Lab popup: yes). It is incomplete containing only some basic elements. If you wish you can use it as the basis for your own styleguides (it is an excellent choice) or you can delete it and create yours from scratch.

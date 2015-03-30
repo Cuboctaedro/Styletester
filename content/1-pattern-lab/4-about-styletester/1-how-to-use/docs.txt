@@ -1,0 +1,15 @@
+Title: How to use
+
+----
+
+Text: 
+
+Unzip the styletester.zip file and upload all the files to your root folder. The zip file contains the entire Kirby install so you once you have uploaded it is will be working. You should log in using username: styletester and password: styletester. Once logged in you should create a new admin user using your username and password and delete user styletester.
+
+From the Pages menu you can add a new Guide and then inside this Guide add Categories, Subcategories and Elements. You should make all these pages visible and order them as you like. Once you have created the Guide you can go on the "Settings" section of the guide page to declare the css and js files that the Guide will use.
+
+Inside each Guide, Category, Subcategory and Element you can add your own text to document it. In the Element page you should also add the element's html code.
+
+Each time you create a Guide, Category, Subcategory or Element you will see that a "view" subpage is also created. You don't need to change anything on these pages or make them visible. They are here to create the "raw" views that present your elements without any additional markup or styling but your own.
+
+With each new Guide you will also see a new "Docs" page. You can use this page to add extra documentation about your Guide. You can add subpages to it and structure your documentation as you like. If you don't need it just keep it invisible.

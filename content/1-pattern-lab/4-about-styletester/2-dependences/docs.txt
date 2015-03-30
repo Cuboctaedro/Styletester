@@ -1,0 +1,11 @@
+Title: Dependences
+
+----
+
+Text: 
+
+StyleTester is built with the (link: http://getkirby.com/ text: Kirby CMS popup: yes). It requires at least version 2.06 (the latest version at the moment) since it makes use of page models that are not available in earlier versions. All Kirby files are included in the installation package.
+
+The only Javascript used by StyleTester is (link: http://uilang.com/ text: uilang.js popup: yes). If you wish to use uilang for your Style Guide simply load it again from your Guide's settings like any other Javascript file.
+
+For rendering its default content StyleTester uses (link: http://necolas.github.io/normalize.css/ text: normalize.css popup: yes). This is only done for demonstration purposes, you can delete or change it at any moment.

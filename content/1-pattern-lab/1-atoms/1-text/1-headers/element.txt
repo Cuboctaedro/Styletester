@@ -1,0 +1,21 @@
+Title: Headers
+
+----
+
+Text: Title tags from h1 to h6
+
+----
+
+Htmlcode: 
+
+<h1>Level 01 Heading</h1>
+
+ <h2>Level 02 Heading</h2>
+
+<h3>Level 03 Heading</h3>
+
+<h4>Level 04 Heading</h4>
+
+<h5>Level 05 Heading</h5>
+
+ <h6>Level 06 Heading</h6>

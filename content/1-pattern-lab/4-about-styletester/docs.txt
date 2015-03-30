@@ -1,0 +1,25 @@
+Title: About StyleTester
+
+----
+
+Text: 
+
+StyleTester is a Kirby CMS theme for creating Style Guides. You can use the StyleTester backend to create, organize and comment html elements that will be rendered using your CSS and JS files. The StyleTester frontend will present these elements with comments, code snippets and all the controls you need to present them.
+
+You can use the same StyleTester install to house various Style Guides and if you wish share CSS and JS files among them.
+
+Html Elements are organized in Categories and Subcategories. The site structure created is something like this:
+- guide 1
+    -  category 1
+        - subcategory 1 
+            - element 1
+            -  element 2
+            - element 3
+        - subcategory 2
+            - element 4
+    -  category 2
+        - subcategory 3 
+            - element 5
+- guide 2
+
+Styletester is created by (link: http://cuboctaedro.eu text: Dimitris Kottas popup: yes).

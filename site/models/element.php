@@ -9,4 +9,7 @@ class ElementPage extends StyletesterPage {
     public function subcategory() {
         return $this->parent();
     }
+    public function hasRelated() {
+        return $this->related()->length();
+    }
 }

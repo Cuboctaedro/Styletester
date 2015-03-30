@@ -1,0 +1,16 @@
+Title: Inline elements in use
+
+----
+
+Text: Inline tags used inside a <p> tag. (use to check line-height consistency).
+
+----
+
+Htmlcode: <p>Lorem ipsum dolor sit amet, natum tibique accusam sed ex, eos electram imperdiet et. Maiorum contentiones <a href="http://cuboctaedro.eu">the a tag</a> no ius, vim suas impetus in, <abbr title="test">the abbr tag</abbr> usu te debet error viris. Putent <acronym title="test">the acronym tag</acronym> reprimique ne usu. Cum <b>the b tag</b> eu copiosae disputando, ut <big>the big tag</big> duo eleifend <cite>the cite tag</cite> accommodare. Ex cum elit <code>the code tag</code> veritus, an qui <dfn>the dfn tag</dfn> munere iriure. Eam <em>the em tag</em> tibique repudiare <i>the i tag</i> sadipscing id. Lorem <ins>the ins tag</ins> ipsum dolor sit amet, <del>the del tag</del> <ins>the ins tag</ins> natum tibique <kbd>the kbd tag</kbd> accusam <mark>the mark tag</mark> sed <q>the q tag <q>inside</q> a q tag</q> ex, <s>the s tag</s> eos electram imperdiet et. Maiorum <samp>the samp tag</samp> contentiones no <small>the small tag</small> ius, vim <strong>the strong tag</strong> suas impetus <sub>the sub tag</sub> in, usu te debet error viris. <sup>the sup tag</sup> Putent reprimique ne usu. <tt>the tt tag</tt> Cum eu copiosae disputando, ut <u>the u tag</u> duo eleifend accommodare. <var>the var tag</var> Ex cum elit veritus, an qui munere iriure. Eam tibique repudiare sadipscing id.</p>
+
+----
+
+Related: 
+
+- 
+  element: pattern-lab/atoms/text/inline-elements

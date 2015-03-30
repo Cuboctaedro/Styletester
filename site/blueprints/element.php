@@ -19,3 +19,10 @@ fields:
   htmlcode:
     label: HTML
     type:  textarea
+  related:
+    label: Related Elements
+    type: structure
+    fields:
+      element:
+        label: URL
+        type: page
